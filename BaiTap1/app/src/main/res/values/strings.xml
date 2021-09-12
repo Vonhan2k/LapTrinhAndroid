@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tài Khoản</string>
+    <string name="text_TieuDe">Phiếu Thông Tin</string>
+    <string name="hint_TaiKhoan">Nhập Tài khoản</string>
+    <string name="hint_MatKhau"> Nhập Mật khẩu</string>
+    <string name="hint_NgaySinh">Nhập Ngày Sinh</string>
+    <string name="hint_Email">Nhập Email</string>
+    <string name="text_XacNhan">Xác Nhận</string>
+</resources>

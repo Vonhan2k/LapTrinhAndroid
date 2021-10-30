@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@color/teal_700"
+            android:textColor="@color/white"
+            android:text="Chương trình tính tiền bán sách online"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TextView>
+
+        <TextView
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#F1DD2A"
+            android:textColor="@color/black"
+            android:text="Chương trình tính tiền bán sách online"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TextView>
+        
+        <TableLayout
+            android:stretchColumns="*"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow>
+                <TextView
+                    android:textSize="15dp"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/black"
+                    android:text="Tên Khách Hàng:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"></TextView>
+
+                <EditText
+                    android:id="@+id/edittextTen"
+                    android:layout_width="265dp"
+                    android:layout_height="match_parent"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"></EditText>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:textSize="15dp"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/black"
+                    android:text="Số lượng sách:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"></TextView>
+
+                <EditText
+                    android:id="@+id/edittextSoluongKhach"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"></EditText>
+            </TableRow>
+
+            <TableRow>
+                <CheckBox
+                    android:textSize="15dp"
+                    android:layout_column="1"
+                    android:id="@+id/chkVip"
+                    android:text="Khách hàng là VIP"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></CheckBox>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:textSize="15dp"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/black"
+                    android:text="Thành tiền: "
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"></TextView>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                    android:textColor="#04B30A"
+                    android:id="@+id/txtThanhTien"
+                    android:background="#AFABAB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"></TextView>
+            </TableRow>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btnTinhTT"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:text="Tính TT"
+                    android:backgroundTint="#D1CDCD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"></Button>
+
+                <Button
+                    android:id="@+id/btnTiep"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="#D1CDCD"
+                    android:text="Tiếp"
+                    android:textColor="@color/black"></Button>
+
+                <Button
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/btnThongke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#D1CDCD"
+                    android:text="Thống kê"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"></Button>
+            </LinearLayout>
+
+        </TableLayout>
+
+        <TextView
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:text="Thông tin thống kê:"
+            android:background="#F1DD2A"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+         </TextView>
+
+
+        <TableLayout
+            android:stretchColumns="*"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TableRow>
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/black"
+                android:text="Tổng số KH:"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></TextView>
+
+            <EditText
+                android:id="@+id/edittextTongsoKH"
+                android:layout_width="265dp"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:editable="true"
+                android:enabled="true"
+                android:focusable="false"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck"></EditText>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/black"
+                android:text="Tổng số KH là VIP:"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></TextView>
+
+            <EditText
+                android:id="@+id/edittextTongsoKHVIP"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:inputType="none"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"></EditText>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/black"
+                android:text="Tổng doanh thu:"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></TextView>
+
+            <EditText
+
+                android:id="@+id/edittextTongdoanhthu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:inputType="none"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"></EditText>
+        </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:background="#1133EC"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TextView>
+
+        <ImageButton
+            android:id="@+id/btnThoat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/exit"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"></ImageButton>
+    </LinearLayout>
+</ScrollView>

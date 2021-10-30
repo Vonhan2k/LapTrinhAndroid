@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Chọn danh mục: "
+        android:background="#0D7111"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <Spinner
+        android:id="@+id/DanhmucSP"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"></Spinner>
+
+    <TextView
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Danh mục sản phẩm: "
+        android:background="#05A0E6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <ListView
+        android:id="@+id/lvSanPham"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

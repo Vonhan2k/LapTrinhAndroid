@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".XemAlbumActivity">
+
+    <TableRow>
+            <TextView
+                android:id="@+id/textviewStt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="STT"
+                android:textColor="@color/black"
+                android:textSize="20sp"></TextView>
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textviewTenBaiHat"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="Tên Bài Hát"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textviewNgay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ngày Ra Đĩa"
+                android:textColor="@color/black"
+                android:textSize="20sp"></TextView>
+    </TableRow>
+
+
+
+</TableLayout>

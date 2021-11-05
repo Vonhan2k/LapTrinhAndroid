@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QuanlyBaihatActivity">
+
+
+
+    <TableLayout
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Album:"></TextView>
+
+            <Spinner
+                android:layout_weight="2"
+                android:paddingRight="10dp"
+                android:id="@+id/spinnerAlbum"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+            </Spinner>
+
+        </TableRow>
+
+        <TableRow android:paddingTop="5dp">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Tên BH:"
+                android:textSize="20sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <EditText
+                android:hint="Nhập tên bài hát"
+                android:layout_weight="2"
+                android:id="@+id/editTextTenBH"
+                android:paddingRight="10dp"
+                android:layout_span="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </EditText>
+
+        </TableRow>
+
+        <TableRow android:paddingTop="5dp">
+
+            <TextView
+
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Ngày ra đĩa:"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:maxLength="10"
+                android:id="@+id/editTextNgay"
+                android:layout_width="276dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:inputType="date"
+                android:paddingRight="50dp"></EditText>
+
+            <Button
+                android:id="@+id/buttonChonNgay"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:backgroundTint="#BFBBBB"
+                android:gravity="center"
+                android:text="..."
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonThemBaiHat"
+        android:textStyle="bold"
+        android:backgroundTint="#BFBBBB"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Thêm bài hát"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
+
+    <ListView
+        android:id="@+id/listviewDanhsachBaihat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>
